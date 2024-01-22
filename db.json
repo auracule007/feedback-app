@@ -1,0 +1,19 @@
+{
+  "feedback": [
+    {
+      "id": "2",
+      "rating": 3,
+      "text": "This is from local db first item"
+    },
+    {
+      "id": "3",
+      "rating": 7,
+      "text": "This is from local db first item"
+    },
+    {
+      "id": "c215",
+      "text": "This is my first backend added item",
+      "rating": 2
+    }
+  ]
+}
