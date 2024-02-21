@@ -14,6 +14,11 @@
       "id": "c215",
       "text": "This is my first backend added item",
       "rating": 2
+    },
+    {
+      "id": "2064",
+      "text": "This project is updated",
+      "rating": 4
     }
   ]
 }

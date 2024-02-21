@@ -127,6 +127,28 @@ input:focus{
   margin: 30px 0 40px;
 }
 
+.Input-text{
+  border: 1px solid black;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 5px;
+}
+.login-user{
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+}
+.login{
+  width: 100px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  /* color:#fff; */ 
+}
+.login:hover{
+  background: #202142;
+  color: white;
+}
 
 .rating li{
   position: relative;

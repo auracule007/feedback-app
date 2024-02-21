@@ -1,4 +1,6 @@
-import React from 'react'
+
+
+import React from 'react';
 
 function Button({ children, version, type, isDisabled }) {
   return (
@@ -6,12 +8,12 @@ function Button({ children, version, type, isDisabled }) {
       {children}
     </button>
   )
-}
+};
 
 Button.defaultProps = {
     type: "button",
     isDisabled: false,
     version: "primary",
-}
+};
 
 export default Button;
