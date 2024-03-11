@@ -18,7 +18,7 @@ export function FeedbackProvider ({ children }) {
     }, []);
 
     const fetchData = async () => {
-        const response= await fetch("http://localhost:3000/api/feedback")
+        const response= await fetch("https://feedback-backend-oikz.onrender.com/api/feedback")
         const data = await response.json();
         setFeedback(data)
     };
@@ -32,7 +32,7 @@ export function FeedbackProvider ({ children }) {
     };
 
     const updatedFeedback = async (id, uptItem) => {
-        const response = await fetch(`http://localhost:3000/api/feedback/${id}`, {
+        const response = await fetch(`https://feedback-backend-oikz.onrender.com/api/feedback/${id}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",
@@ -46,7 +46,7 @@ export function FeedbackProvider ({ children }) {
 
     const deleteFeedback = async (id) => {
         if (window.confirm('Are you sure you want to delete?...')) {
-            await fetch(`http://localhost:3000/api/feedback/${id}`, {method: 'DELETE',
+            await fetch(`https://feedback-backend-oikz.onrender.com/api/feedback/${id}`, {method: 'DELETE',
             headers: {
                 // "Content-Type": "application/json",
                 "x-auth-token": state.accessToken
@@ -57,7 +57,7 @@ export function FeedbackProvider ({ children }) {
     };
   
     const addFeedback = async (newfeedback) => {
-        const response = await fetch("http://localhost:3000/api/feedback", {
+        const response = await fetch("https://feedback-backend-oikz.onrender.com/api/feedback", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
